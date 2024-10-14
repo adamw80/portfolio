@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Main Course – Cooking Up Earthquake Predictions with Machine Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Post 4: The Main Course – Cooking Up Earthquake Predictions with Machine Learning</h1>
+            <img src="blog images/earthquake-analysis4.jpg" class="img-fluid my-4" alt="Earthquake Predictions with Machine Learning">
+            
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>It’s time for the main course! Just like a chef combines ingredients with precision to create a complex dish, we’re blending together machine learning techniques to cook up predictions about earthquakes. Machine learning helps us make sense of historical data and forecast future quakes, giving us insights into where and when the next shake might happen in Washington State. In this post, we’ll take a look at the models we used, why we chose them, and what they revealed about Washington’s seismic activity.</p>
+
+                <hr>
+
+                <h4>1. The Ingredients: Preparing Features for the Model</h4>
+                <p>Before diving into the models, we had to prepare our ingredients. Just like slicing, dicing, and seasoning ingredients to get the most flavor, we processed and selected features to ensure the models had the right data to make accurate predictions. Here’s what went into the mix:</p>
+                <ul>
+                    <li><strong>Magnitude and Depth</strong>: These are our primary features, much like the core ingredients in a dish. We needed to include magnitude and depth to help the model understand the size and impact of each quake.</li>
+                    
+                    
+                    <li><strong>Geographic Location</strong>: Latitude and longitude add a regional “flavor,” helping the model recognize patterns in specific areas. Like understanding which flavors work well together, location data helps the model spot regional trends.</li>
+                    
+
+                    <li><strong>Time Variables</strong>: We broke down time into components like year, month, and day. This is akin to seasoning based on the season—certain patterns emerge over time, and time-based features help capture these temporal trends.</li>
+                    
+                </ul>
+
+                <hr>
+
+                <h4>2. Choosing the Right Recipe – Model Selection</h4>
+                <p>Once our ingredients were ready, we had to pick the right models. Each model has its strengths, like different cooking techniques suited to different dishes. Here are the ones we used:</p>
+                <ul>
+                    <li><strong>RandomForestClassifier</strong>: Like a hearty stew that blends flavors, the RandomForestClassifier combines many decision trees to make strong predictions. It’s particularly good at handling complex relationships, making it a great choice for classifying earthquake magnitudes.</li>
+                    <img src="blog images/randomforest-classifier1.jpg" class="img-fluid my-4" alt="Moran's I Spatial Correlation">
+                    <li><strong>MLPClassifier</strong>: Think of this as the sous-chef that handles the intricate details. MLP (Multi-Layer Perceptron) is a type of neural network that learns patterns in data by adjusting its many layers, making it well-suited to capturing deeper relationships within the features.</li>
+                    <img src="blog images/MLP diagram1.jpg" class="img-fluid my-4" alt="Moran's I Spatial Correlation">
+                    <li><strong>Ensemble Models</strong>: For a little extra flair, we used <strong>Bagging</strong> and <strong>Stacking Ensembles</strong>. These models combine several classifiers to create a more robust prediction, much like adding a garnish or a final layer of seasoning to perfect a dish.</li>
+                </ul>
+
+                <hr>
+
+                <h4>3. Cooking It All Together: Training and Testing</h4>
+                <p>With our models selected, it was time to “cook” by training them on our data. Just like a recipe requires careful timing and temperature control, training a model involves setting parameters and letting it learn from the data. Here’s how the process unfolded:</p>
+                <ul>
+                    <li><strong>Training the Models</strong>: We fed each model a subset of our data and let it learn the patterns. This is like stirring the pot and letting the flavors meld together. Each model made adjustments based on the data, refining its internal “taste” for the seismic patterns in Washington.</li>
+
+                    <li><strong>Testing the Models</strong>: After training, we tested each model on new data to see how well it could predict earthquake characteristics. Testing is like taking a taste test—if the flavors are balanced and accurate, we know we’re on the right track. We evaluated each model based on accuracy and other metrics, keeping the ones that performed best.</li>
+                </ul>
+
+                <hr>
+
+                <h4>4. The Final Dish: What Our Models Revealed</h4>
+                <p>With our models trained and tested, we plated up the results! Here’s what they revealed about earthquake patterns in Washington State:</p>
+                <ul>
+                    <li><strong>Regional Predictions</strong>: The models highlighted areas with higher probabilities of future quakes. Like finding out which flavors pop the most in a dish, we identified regions where seismic activity is likely to recur.</li>
+                    
+
+                    <li><strong>Magnitude Estimates</strong>: Our regression models (such as AdaBoost and MLPRegressor) helped predict the likely magnitudes of future quakes. The larger quakes tended to align with deeper areas of activity, suggesting that magnitude is tied to location in ways our model could recognize.</li>
+                    
+
+                    <li><strong>Combined Models for Enhanced Prediction</strong>: Ensemble methods, which blend several models, proved effective. Just like a well-rounded dish benefits from complementary flavors, combining model predictions helped us improve accuracy and confidence in our forecasts.</li>
+                    
+                </ul>
+
+                <hr>
+
+                <h4>Conclusion</h4>
+                <p>Machine learning models have allowed us to serve up powerful predictions, providing a clearer picture of the earthquake landscape in Washington State. Through careful preparation, thoughtful model selection, and thorough testing, we’ve developed insights that can help inform future preparedness efforts. In the final post of this series, we’ll bring everything together with visualizations that map out our findings and provide an overarching look at Washington’s seismic risks. Get ready for the grand finale!</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post5.html" class="btn btn-primary">Continue to Post 5: Visualizing Washington’s Seismic Landscape</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

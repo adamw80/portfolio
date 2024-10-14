@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plating the Masterpiece – Visualizing Washington’s Earthquake Risk</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Post 5: Plating the Masterpiece – Visualizing Washington’s Earthquake Risk</h1>
+            <img src="blog images/earthquake-analysis5.jpg" class="img-fluid my-4" alt="Visualizing Washington’s Earthquake Risk">
+            
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>Now that we’ve prepped, cooked, and spiced up our earthquake data, it’s time to plate the final dish. Just like a beautifully presented meal, data visualizations bring together all the flavors we’ve worked on and make the results easy to digest. In this post, we’ll serve up maps and charts that illustrate the patterns, risks, and future possibilities of seismic activity in Washington State. Let’s take a look at the finished product and see what our data-driven “meal” reveals!</p>
+
+                <hr>
+
+                <h4>1. Mapping Earthquake Locations: The Foundation of the Plate</h4>
+                <p>Our first visualization is a map of earthquake locations across Washington State. This map serves as the base layer, much like a bed of rice or pasta on a plate. It gives readers a broad view of where seismic activity occurs, setting the stage for deeper analysis.</p>
+                <ul>
+                    <li><strong>The Cluster Effect</strong>  
+                        Earthquake locations are plotted as circles, with different sizes representing various magnitude ranges. Clusters emerge in areas like Seattle and along known fault lines, revealing hotspots of activity.
+                    </li>
+                </ul>
+                <iframe src="blog images/wa_earthquakes.html" width="900" height="600"></iframe>
+
+                <hr>
+
+                <h4>2. Overlaying Fault Lines: Adding Depth to the Dish</h4>
+                <p>Next, we layered known fault lines on top of the earthquake map. Think of this as adding sauce on top of the base layer, giving more depth and context to the visual dish.</p>
+                <ul>
+                    <li><strong>The Fault Line Connection</strong>  
+                        By overlaying fault lines, we see a clear relationship between geological features and earthquake locations. This is like adding the final seasoning that ties the dish together, showing how the “heat” of seismic activity aligns with structural weaknesses in the Earth’s crust.
+                    </li>
+                </ul>
+                <iframe src="blog images/wa_earthquakes_with_faultlines.html" width="900" height="600"></iframe>
+
+                <hr>
+
+                <h4>3. Magnitude Over Time: The Spice Levels</h4>
+                <p>We also created a chart showing the magnitudes of earthquakes over time. Imagine this as a timeline of spice levels, where we can see which years brought mild quakes and which ones turned up the heat.</p>
+                <ul>
+                    <li><strong>Intensity Trends</strong>  
+                        The chart reveals periods of higher seismic activity and highlights significant quakes over the last century. This helps us understand if there are periods when Washington experienced more intense shaking.
+                    </li>
+                </ul>
+                <img src="blog images/frequency-over-time.jpg" class="img-fluid my-4" alt="Combined Predictions">
+
+                <hr>
+
+                <h4>4. Probability Maps: Forecasting Future Flavors</h4>
+                <p>Using our machine learning models, we generated probability maps that estimate the likelihood of future earthquakes in different regions. These maps are like predicting which bites of the dish will be spiciest—where should Washington residents expect the most activity?</p>
+                <ul>
+                    <li><strong>Risk Zones</strong>  
+                        The map indicate areas with the highest risk of future quakes, based on patterns from the past century. This visualization serves as a powerful tool for preparedness, helping people understand where the likelihood of future quakes is greatest.
+                    </li>
+                </ul>
+                <iframe src="blog images/wa_earthquakes_magnitude_predictions.html" width="900" height="600"></iframe>
+
+                <hr>
+
+                <h4>5. Combined Visualizations: The Grand Finale</h4>
+                <p>Finally, we combined all these layers into a single, interactive visualization that allows readers to explore Washington’s seismic landscape. This is the plated dish, a complete meal that lets you savor each component in harmony.</p>
+                <ul>
+                    <li><strong>Interactive Maps</strong>  
+                        Using tools like Folium, we created an interactive map that lets users toggle layers to view earthquakes, fault lines, and predicted risk areas. It’s a bit like presenting a dish in courses, where each bite reveals new flavors and textures.
+                    </li>
+                </ul>
+                <iframe src="blog images/wa_earthquakes_all_layers.html" width="900" height="600"></iframe>
+
+                <hr>
+
+                <h4>Conclusion</h4>
+                <p>With our analysis visualized, we’ve brought together all the flavors of this project to create a complete and satisfying “meal.” Through data cleaning, statistical analysis, machine learning, and visualization, we’ve created a thorough understanding of Washington’s earthquake risks. The insights from this project can help inform preparedness efforts and encourage residents to be mindful of the state’s seismic landscape.</p>
+                <p>Thank you for joining us on this culinary adventure through Washington’s earthquake data! Stay tuned for more data science recipes, where we’ll continue to transform raw data into tasty insights, one project at a time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

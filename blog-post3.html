@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a Pinch of Precision – The Statistics Behind Earthquake Patterns in Washington State</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Post 3: Adding a Pinch of Precision – The Statistics Behind Earthquake Patterns in Washington State</h1>
+            <img src="blog images/earthquake-analysis3.jpg" class="img-fluid my-4" alt="Statistics Behind Earthquake Patterns">
+            
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>With our data ingredients prepped and explored, it’s time to get precise with our recipe. Imagine a dish where every flavor has been measured out to perfection—no more guessing, just exact amounts to bring out the best taste. In data science, this is where <strong>statistics</strong> come into play, helping us quantify patterns and trends in our data to extract deeper insights. Today, we’re adding a dash of statistical rigor to our earthquake analysis to see what flavors emerge from Washington’s seismic activity.</p>
+
+                <hr>
+
+                <h4>1. Moran’s I – The Spice of Spatial Correlation</h4>
+                <p>Ever noticed how certain spices seem to work better together? Moran’s I is a bit like figuring out whether certain flavors in our dish naturally complement each other. In data terms, it helps us detect <strong>spatial autocorrelation</strong>, or whether earthquakes are clustered together in specific areas rather than being spread randomly.</p>
+                <ul>
+                    <li><strong>Why Moran’s I?</strong>  
+                        Just as some spices are best paired together, earthquakes often occur in clusters. Moran’s I tells us if the locations of quakes are more clustered than we’d expect by random chance. By using this measure, we can confirm if areas near each other are more likely to experience similar seismic activity.
+                    </li>
+                    <li><strong>How We Calculated It</strong>  
+                        We calculated Moran’s I for our earthquake locations across Washington. The result showed positive spatial autocorrelation, meaning the quakes are indeed clustering in certain areas, much like how ingredients tend to concentrate around the strongest flavors in a dish.
+                    </li>
+                </ul>
+                <img src="blog images/morans-i.jpg" class="img-fluid my-4" alt="Moran's I Spatial Correlation">
+
+                <hr>
+
+                <h4>2. Poisson Distribution – Predicting the Pop of an Earthquake</h4>
+                <p>Next, we used the <strong>Poisson distribution</strong> to understand how often earthquakes occur in a given period. Think of this as measuring how often you need to stir a pot to keep the flavors from burning. With earthquakes, the Poisson distribution helps us model the frequency of seismic events over time.</p>
+                <ul>
+                    <li><strong>Why Poisson?</strong>  
+                        Earthquakes, like certain flavors, don’t occur at regular intervals. The Poisson distribution allows us to estimate the probability of a given number of earthquakes occurring within a specified timeframe. This way, we can make educated guesses about the number of quakes we might expect to experience in the future.
+                    </li>
+                    <li><strong>What We Found</strong>  
+                        Using the Poisson model, we estimated the likelihood of different numbers of quakes over time. For example, we could predict the chances of experiencing three or more quakes in a given month. The result showed that Washington’s seismic activity is like a surprise ingredient—sporadic, with some months being surprisingly spicy and others more mild.
+                    </li>
+                </ul>
+                <img src="blog images/poisson-distribution.jpg" class="img-fluid my-4" alt="Poisson Distribution for Earthquakes">
+
+                <hr>
+
+                <h4>3. Descriptive Statistics – Measuring the Flavor Profiles</h4>
+                <p>Beyond spatial and frequency-based models, we also calculated several descriptive statistics, much like tasting a dish and describing its flavors in detail. These statistics help us understand the basic characteristics of our data, including central tendencies and variability.</p>
+                <ul>
+                    <li><strong>Magnitude</strong>  
+                        The average and range of earthquake magnitudes gave us a sense of how strong quakes typically are in Washington. It’s like assessing the heat level of a dish—do the quakes usually pack a punch, or are they on the milder side? Most earthquakes in our dataset were on the lower end, though we did spot a few spicy outliers!
+                    </li>
+                    <li><strong>Depth</strong>  
+                        Looking at the average and standard deviation of quake depths, we saw how deeply each shake originated. Shallow quakes have a higher likelihood of being felt at the surface, which is why understanding depth is essential. It’s like tasting for layers in a dish, where you can feel certain spices more prominently on top than deeper down.
+                    </li>
+                    <li><strong>Frequency</strong>  
+                        By calculating frequency statistics, we gained insight into how often these quakes occur. Washington experiences quite a few shakes, and knowing this helps us appreciate the constant background “simmer” of seismic activity. It’s like learning that the stew needs frequent stirring to keep everything from sticking to the bottom.
+                    </li>
+                </ul>
+                <img src="blog images/descriptive-stats.jpg" class="img-fluid my-4" alt="Descriptive Statistics">
+
+                <hr>
+
+                <h4>Conclusion</h4>
+                <p>With these statistics, we’ve added a layer of precision to our understanding of earthquake patterns in Washington State. Like refining a recipe to get just the right balance of flavors, we’ve used statistical methods to quantify the relationships, frequencies, and characteristics of earthquakes. In our next post, we’ll take this knowledge and cook up some predictions with machine learning, aiming to forecast future quakes and assess the potential impact of seismic activity on the state. Get ready for the main course!</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post4.html" class="btn btn-primary">Continue to Post 4: Machine Learning for Earthquake Predictions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

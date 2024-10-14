@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Analysis – The Recipe for Seismic Success in Washington State</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Post 1: Earthquake Analysis – The Recipe for Seismic Analysis in Washington State</h1>
+            <img src="blog images/earthquake-analysis1.jpg" class="img-fluid my-4" alt="Earthquake Analysis Image">
+            
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>Why the cooking theme? Well, just like a chef in the kitchen, I’m always experimenting, trying new techniques, and crafting flavors—except, in my case, the flavors are insights drawn from data. Cooking is a way I connect with the world, much like my connection to Washington State and my passion for understanding its seismic personality. This blog is my way of combining these loves, blending the art of cooking with the science of data to serve up a clearer picture of the state's earthquake history. So, let’s dive into this recipe for insight, as we explore how Washington State, cooking, and data science each have their own quirks, requiring just the right ingredients to create something extraordinary.</p>
+
+                <hr>
+
+                <h4>Step 1: Gathering Ingredients – The Data</h4>
+                <p>Just like any recipe starts with quality ingredients, our project begins with the right data. In this case, we’re sourcing from the <strong>United States Geological Survey (USGS)</strong>. This dataset is like a well-stocked pantry of seismic events, recording Washington’s earthquakes from <strong>1904</strong> to today. Each “ingredient” in this dataset represents an earthquake, complete with information about its:</p>
+                <ul>
+                    <li><strong>Location</strong> (latitude and longitude)</li>
+                    <li><strong>Date and time</strong> (the “when” of the quake)</li>
+                    <li><strong>Magnitude</strong> (how intense it was)</li>
+                    <li><strong>Depth</strong> (how deep underground it started)</li>
+                </ul>
+                <p>Our job as data scientists (or chefs) is to transform these raw ingredients into a deliciously insightful “dish” that answers big questions about Washington’s seismic history.</p>
+
+                <hr>
+
+                <h4>Step 2: The Goal of Our Recipe</h4>
+                <p>Our culinary masterpiece has three key objectives. Think of these as the three courses of our meal:</p>
+                <ol>
+                    <li><strong>Appetizer: Identify High-Risk Cities</strong>  
+                        - Our first course is light but essential. We want to understand which cities have experienced the most earthquakes. Are some places more prone to quakes than others? This analysis will help us focus on where to direct preparedness efforts.
+                    </li>
+                    <li><strong>Main Course: Map Out Earthquakes and Fault Lines</strong>  
+                        - For the main dish, we’re mapping out quake locations and overlaying them with Washington’s geological fault lines. Visualizing the data in this way helps us see if there’s a connection between where the earth’s crust is weak and where quakes tend to happen.
+                    </li>
+                    <li><strong>Dessert: Predict Future Earthquakes</strong>  
+                        - Finally, we’re spicing things up with some machine learning to forecast future seismic events. By studying historical trends, we aim to predict the likelihood and severity of future quakes in specific areas. It’s like predicting how a dessert will set based on the ingredients and methods used—will it wobble with a small shake or crash down?
+                    </li>
+                </ol>
+
+                <hr>
+
+                <h4>Step 3: Mise en Place – Prepping the Data</h4>
+                <p>In the culinary world, <strong>mise en place</strong> means getting all your ingredients prepped and ready before you start cooking. The same is true in data science: before we jump into analysis, we need to clean, organize, and prepare our data.</p>
+                <ul>
+                    <li><strong>Date Formatting</strong>  
+                        - Earthquake records spanning over a century meant dates were in various formats, so we standardized them. Just as you’d chop vegetables to a consistent size for even cooking, we formatted each date uniformly to make it easier to analyze trends over time.
+                    </li>
+                    <li><strong>Handling Missing Data</strong>  
+                        - Data is rarely complete. Some earthquakes in our dataset were missing information, like depth or magnitude. Think of these as ingredients missing from a recipe. Sometimes, we can find substitutes, while other times, we have to leave things out. For example, if a quake was missing depth information but still had a date, time, and magnitude, we kept it. But if it was missing too many details, we tossed it out to keep our “dish” from being too bland.
+                    </li>
+                    <li><strong>Geolocation Checks</strong>  
+                        - To make sure our data represented the true impact on Washington State, we verified the latitude and longitude of each quake. Much like making sure each ingredient has its place on the cutting board, we wanted to ensure each quake had a specific spot on the map. This was crucial for accurately mapping seismic activity and pinpointing high-risk areas.
+                    </li>
+                    <li><strong>Transformation and Formatting</strong>  
+                        - Next, we transformed the data to make it more usable. This included converting some columns, adding new features, and formatting all information to ensure consistency. For example, we might calculate the time difference between earthquakes or convert magnitudes to a logarithmic scale to better represent the energy released by each quake.
+                    </li>
+                </ul>
+
+                <p>With all the data now prepped and ready, we’re set to move on to the next steps in this seismic culinary journey! Stay tuned for the next post, where we’ll dive into the data itself, uncovering patterns and insights that tell the story of Washington’s earthquakes over time.</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post2.html" class="btn btn-primary">Continue to Post 2: Uncovering Patterns in the Data</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

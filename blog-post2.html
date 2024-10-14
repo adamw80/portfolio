@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifting Through the Ingredients – Exploring Earthquake Data in Washington State</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Post 2: Sifting Through the Ingredients – Exploring Earthquake Data in Washington State</h1>
+            <img src="blog images/earthquake-analysis2.jpg" class="img-fluid my-4" alt="Exploring Earthquake Data">
+            
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>In the kitchen, before you start cooking, it’s essential to examine your ingredients, get a feel for their flavors, and figure out how they’ll work together. In the world of data science, this process is called <strong>Exploratory Data Analysis (EDA)</strong>. Think of it as tasting and adjusting your ingredients to ensure the final dish is just right. Now that we’ve prepped our data, it’s time to take a closer look at it, one ingredient at a time, and uncover the unique “flavors” of Washington’s earthquake data.</p>
+
+                <hr>
+
+                <h4>1. Univariate Analysis: Tasting Each Ingredient Individually</h4>
+                <img src="blog images/eda-univariate.jpg" class="img-fluid my-4" alt="Univariate Analysis">
+                <p>Our first step is to understand each variable in the dataset independently. This process is like tasting individual ingredients to get a sense of their flavors. Here’s what we discovered:</p>
+                <ul>
+                    <li><strong>Magnitude</strong>: We looked at the distribution of earthquake magnitudes. Most quakes are on the smaller side, with only a handful reaching those intense, table-shaking levels. It’s like a recipe with a dash of spice here and there—intense but infrequent.</li>
+                    <li><strong>Depth</strong>: Another important factor is how deep the earthquakes are. Most quakes in Washington occur at shallow depths, meaning they’re more likely to be felt on the surface. This is like adding a top layer of seasoning that’s immediately noticeable!</li>
+                    <li><strong>Location (Latitude & Longitude)</strong>: Each quake has a specific location. By plotting these, we can see clusters of activity around certain areas—these are our “hot zones,” like ingredients that bring a strong, dominant flavor to the dish.</li>
+                </ul>
+                <p>Through univariate analysis, we’re starting to identify what makes each ingredient tick, setting us up for the next step: understanding how they interact.</p>
+
+                <hr>
+
+                <h4>2. Multivariate Analysis: Combining Flavors</h4>
+                <p>Now that we’ve tasted each ingredient individually, it’s time to mix them and see how they play together. In data terms, this means exploring the relationships between variables. Let’s add a pinch of depth, a sprinkle of magnitude, and see what flavors emerge!</p>
+                <ul>
+                    <li><strong>Magnitude vs. Depth</strong>: We found an interesting pattern here—larger earthquakes tend to happen deeper underground, while smaller ones are shallow. Imagine the depth as layers in a cake, with the biggest quakes baking deep in the center, while the smaller ones are more like the frosting on top.</li>
+                    <img src="blog images/magnitude-vs-depth.jpg" class="img-fluid my-4" alt="Multivariate Analysis">
+                    <li><strong>Frequency Over Time</strong>: By looking at the dates, we tracked how often earthquakes happen in Washington. It’s like flipping through a cookbook that reveals a trend: more recent years have seen more quakes. Maybe we’re dealing with a spicy recipe that gets hotter over time!</li>
+                    <img src="blog images/frequency-over-time.jpg" class="img-fluid my-4" alt="Multivariate Analysis">
+                    <li><strong>Cities with High Earthquake Frequency</strong>: Some cities showed up again and again in the dataset. These are the “high spice” areas, where seismic activity is frequent and intense. For example, Seattle and its surrounding areas appear frequently—like the garlic of our recipe, always making its presence known.</li>
+                    <iframe src="blog images/wa_cities_earthquakes_highest_freq.html" width="1000" height="600"></iframe>
+                </ul>
+
+                <hr>
+
+                <h4>3. Temporal Analysis: Timing the Ingredients</h4>
+                <p>Timing is everything in both cooking and earthquakes. For this dish, we explored when earthquakes happen—do they strike more in certain years, months, or even times of day?</p>
+                <ul>
+                    <li><strong>Yearly Trends</strong>: Earthquake frequency varies by year. We saw that some years had a lot of quakes, while others were quieter. This is like a recipe where the flavors shift with the seasons, sometimes mild, sometimes intense.</li>
+                    <img src="blog images/eda-temporal-yearly.jpg" class="img-fluid my-4" alt="Temporal Analysis">
+                    <li><strong>Monthly Patterns</strong>: Surprisingly, we did find a strong pattern for certain times of months, suggesting that Washington’s earthquakes are mildly predictable since there seems to be an uptick in frequecies during May and October.</li>
+                    <img src="blog images/eda-temporal-monthly.jpg" class="img-fluid my-4" alt="Temporal Analysis">
+                </ul>
+
+                <hr>
+
+                <h4>4. Spatial Analysis: Mapping the Ingredients</h4>
+                <p>Finally, we took all of this data and mapped it out to visualize where the earthquakes are happening. This is where things get really interesting, as it lets us see our “flavors” on the plate:</p>
+                <ul>
+                    <li><strong>Clusters of Activity</strong>: By plotting earthquake locations on a map of Washington, we saw clusters of seismic activity. Certain areas—like Seattle—are more prone to quakes. Think of this like placing garnishes on a plate to highlight specific flavors.</li>
+                    <iframe src="blog images/wa_earthquakes_spatial_clustering.html" width="1000" height="600"></iframe>
+                    <p>
+                    <li><strong>Overlaying Fault Lines</strong>: To add even more depth, we layered the earthquake data over Washington’s fault lines. This is where our dish comes together, showing that areas near fault lines experience more quakes, much like spices tend to concentrate in certain bites.</li>
+                    <iframe src="blog images/wa_earthquakes_with_faultlines.html" width="1000" height="600"></iframe>
+                </ul>
+
+                <hr>
+
+                <h4>Conclusion</h4>
+                <p>Through this exploratory analysis, we’ve tasted, mixed, and visualized our ingredients, gaining a better understanding of what makes Washington’s earthquakes unique. Now, we’re ready to move on to the next phase, where we’ll dig deeper into the statistical methods that help us quantify these patterns. In the next post, we’ll add a few dashes of statistical analysis to refine our “recipe” and reveal new insights about Washington’s seismic activity!</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post3.html" class="btn btn-primary">Continue to Post 3: Visualizing Earthquakes and Fault Lines</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
