@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Patients Ghost Us—and What We Can Do About It</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Why Patients Ghost Us—and What We Can Do About It</h1>
+            <img src="blog images/healthcare-blog1.jpg" class="img-fluid my-4" alt="Why Patients Ghost Us">
+
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Introduction</h4>
+                <p>At Spectrum Psychological Services, we’re no strangers to the mystery of patient churn. Patients who once seemed engaged suddenly stop showing up. This phenomenon feels a lot like getting ghosted on a date: confusing, frustrating, and full of unanswered questions.</p>
+                <p>But churn isn’t just an inconvenience—it’s a major issue for mental health clinics. It disrupts treatment, impacts outcomes, and hits clinic revenue. That’s why I decided to investigate. With the power of data science, we’re solving the churn puzzle, one insight at a time.</p>
+
+                <hr>
+
+                <h4>What Is Patient Churn?</h4>
+                <p>In simple terms, patient churn is when a patient stops engaging with the clinic—whether that means continuously skipping appointments, canceling last-minute, or vanishing entirely.</p>
+                <p><strong>Here’s why churn matters:</strong></p>
+                <ul>
+                    <li><strong>For Patients:</strong> Dropping out of care often means unmet mental health needs, which can lead to worsening symptoms.</li>
+                    <li><strong>For Clinics:</strong> Churn disrupts schedules and reduces revenue, making it harder to provide care for everyone.</li>
+                </ul>
+                <p>My mission was to figure out why patients churn—and how to prevent it.</p>
+
+                <hr>
+
+                <h4>The Role of Data Science</h4>
+                <p>Churn isn’t random; it’s a pattern hidden in the data. I aimed to uncover that pattern by asking three key questions:</p>
+                <ul>
+                    <li><strong>Who are our patients?</strong> I used K-Means clustering to group patients based on shared traits like travel time, no-show history, diagnosis, appointment frequency, and more.</li>
+                    <li><strong>What drives churn?</strong> I analyzed factors like demographics and engagement scores to identify risks.</li>
+                    <li><strong>Can we predict churn before it happens?</strong> I built a Random Forest model to flag high-risk patients so we could intervene early.</li>
+                </ul>
+                <p>This wasn’t just an academic exercise—it was a practical strategy to keep patients engaged and thriving.</p>
+
+                <hr>
+
+                <h4>Meet the Clusters</h4>
+                <p>One of the first steps in the analysis was to group patients into clusters using K-Means. Think of clustering like seating people at a wedding: you group them by similarities, whether it’s mutual friends, relatives, or shared love of the dance floor. Here’s what I found:</p>
+                <ul>
+                    <li><strong>Cluster 1: The Regulars</strong>
+                        <ul>
+                            <li><strong>Traits:</strong> These patients live close, rarely miss appointments, and have consistent schedules.</li>
+                            <li><strong>Risk of Churn:</strong> Low. These are the patients you can count on.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cluster 2: The Fence-Sitters</strong>
+                        <ul>
+                            <li><strong>Traits:</strong> These patients have moderate no-shows and irregular appointment patterns.</li>
+                            <li><strong>Risk of Churn:</strong> Medium. They’re engaged but need a nudge to stay on track.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cluster 3: The Flight Risks</strong>
+                        <ul>
+                            <li><strong>Traits:</strong> These patients live far away, frequently miss appointments, and schedule sporadically.</li>
+                            <li><strong>Risk of Churn:</strong> High. Without intervention, they’re likely to disengage entirely.</li>
+                        </ul>
+                        <img src="blog images/flight-risks.jpg" class="img-fluid my-4" alt="Flight Risks Cluster">
+                    </li>
+                </ul>
+
+                <hr>
+
+                <h4>The Clues in the Data</h4>
+                <p>I didn’t stop at clustering. To really understand churn, I needed to investigate its driving factors. Here are a few clues I uncovered:</p>
+                <ul>
+                    <li><strong>Travel Time:</strong> Patients with longer commutes are more likely to churn.</li>
+                    <li><strong>No-Show History:</strong> Past behavior predicts future behavior. Patients with frequent no-shows have the highest churn rates.</li>
+                    <li><strong>Appointment Frequency:</strong> Infrequent visits often signal disengagement.</li>
+                    <li><strong>Demographics:</strong> Younger patients and those with lower incomes face more barriers to consistent care.</li>
+                </ul>
+                <p>Each factor added a piece to the puzzle, helping to understand the full picture.</p>
+
+                <hr>
+
+                <h4>What’s Next?</h4>
+                <p>Now that we’ve introduced the clusters and uncovered some initial clues, it’s time to dive deeper. In the next post, we’ll explore the churn risk factors in detail and show how predictive modeling is helping us act before patients disengage.</p>
+
+                <hr>
+
+                <h4>Final Thoughts</h4>
+                <p>Patient churn might seem like a mystery, but with data science, it’s one we can solve. By identifying patient clusters and uncovering risk factors, we’re taking the first steps toward building stronger patient relationships and improving care.</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post7.html" class="btn btn-primary">Continue to Post 2: The Churn Puzzle: Risk Factors and Predictions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Churn Puzzle: Risk Factors and Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">The Churn Puzzle: Risk Factors and Predictions</h1>
+            <img src="blog images/healthcare-blog2.jpg" class="img-fluid my-4" alt="The Churn Puzzle">
+
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <h4>Welcome Back!</h4>
+                <p>Last time, I introduced you to our three patient clusters and started piecing together the churn mystery. Now, it’s time to dive deeper into the factors driving patient churn and reveal how predictive modeling helps us act before patients disengage.</p>
+                <p>If churn is the problem, risk factors are the breadcrumbs leading us to the solution. So, what clues did the data reveal? Let’s find out.</p>
+
+                <hr>
+
+                <h4>Unmasking the Risk Factors</h4>
+                <p>Patient churn isn’t random—it’s driven by a combination of behavioral, logistical, and demographic factors. Here are the top culprits:</p>
+
+                <hr>
+
+                <h5>1. Travel Time: The Distance Barrier</h5>
+                <p><strong>What I Found:</strong></p>
+                <ul>
+                    <li>Patients with longer commutes churn more frequently.</li>
+                    <li><strong>Average Travel Time for Churned Patients:</strong> 29 minutes</li>
+                    <li><strong>Average Travel Time for Retained Patients:</strong> 11 minutes</li>
+                </ul>
+                <p><strong>Why It Matters:</strong> Traveling to appointments can be a hurdle, especially for frequent visits. Long distances add stress, time, and cost, increasing the likelihood of disengagement.</p>
+                <img src="blog images/travel-time-churn.jpg" class="img-fluid my-4" alt="Travel Time and Churn">
+
+                <hr>
+
+                <h5>2. No-Show History: Past Behavior Predicts Future Behavior</h5>
+                <p><strong>What I Found:</strong> Patients with 3+ prior no-shows have a 60% churn rate, compared to just 18% for those with no prior no-shows.</p>
+                <p><strong>Why It Matters:</strong> Missed appointments are a red flag. They often signal disengagement and can snowball into complete disengagement if left unaddressed.</p>
+
+                <hr>
+
+                <h5>3. Appointment Frequency: Out of Sight, Out of Mind</h5>
+                <p><strong>What I Found:</strong></p>
+                <ul>
+                    <li><strong>Churned Patients:</strong> Average time between appointments is 15 days.</li>
+                    <li><strong>Retained Patients:</strong> Average time between appointments is 7 days.</li>
+                </ul>
+                <p><strong>Why It Matters:</strong> Infrequent appointments disrupt continuity of care, making it easier for patients to drift away. Regular interactions reinforce engagement and progress.</p>
+
+                <hr>
+
+                <h5>4. Demographics: The Hidden Influencers</h5>
+                <p><strong>What I Found:</strong></p>
+                <ul>
+                    <li><strong>Age Group with Highest Churn Rate:</strong> 8–11 years old</li>
+                    <li><strong>Income Level with Highest Churn Rate:</strong> Below $30,000 annual income</li>
+                </ul>
+                <p><strong>Why It Matters:</strong> Younger patients may have more unstable schedules, and financial constraints can create barriers to consistent care.</p>
+                <img src="blog images/demographics-churn.jpg" class="img-fluid my-4" alt="Demographics and Churn">
+
+                <hr>
+
+                <h4>Bringing It All Together</h4>
+                <p>While each factor tells part of the story, the real power comes from analyzing how they interact. For example:</p>
+                <ul>
+                    <li>Patients with long travel times and low income face double the barriers to engagement.</li>
+                    <li>Younger patients who schedule infrequent appointments are particularly vulnerable to churn.</li>
+                </ul>
+                <img src="blog images/factors-interaction.jpg" class="img-fluid my-4" alt="Risk Factor Interactions">
+
+                <hr>
+
+                <h4>Predicting Churn with Machine Learning</h4>
+                <p>Understanding risk factors is only half the battle. To stay ahead of churn, we need to predict it before it happens. Enter: <strong>Random Forest</strong>, our algorithm of choice.</p>
+
+                <h5>Why Random Forest?</h5>
+                <ul>
+                    <li><strong>Handles Complexity:</strong> It can model interactions between multiple factors.</li>
+                    <li><strong>Accuracy:</strong> Provides reliable predictions without overfitting.</li>
+                    <li><strong>Explainability:</strong> Identifies which features contribute most to predictions.</li>
+                </ul>
+
+                <h5>How It Works</h5>
+                <p><strong>Feature Selection:</strong></p>
+                <ul>
+                    <li>Key inputs: Travel time, no-show history, appointment frequency, demographics, and engagement scores.</li>
+                    <li>Feature importance analysis showed travel time, delay, distance, and age as top predictors.</li>
+                </ul>
+                <img src="blog images/random-forest-features.jpg" class="img-fluid my-4" alt="Random Forest Features">
+
+                <p><strong>Training and Evaluation:</strong></p>
+                <ul>
+                    <li><strong>Training Set:</strong> 80% of the data.</li>
+                    <li><strong>Test Set:</strong> 20% of the data for evaluation.</li>
+                </ul>
+                <p><strong>Performance Metrics:</strong></p>
+                <ul>
+                    <li><strong>Accuracy:</strong> 84%</li>
+                    <li><strong>Precision:</strong> 91%</li>
+                    <li><strong>Recall:</strong> 68%</li>
+                    <li><strong>F1-Score:</strong> 78%</li>
+                </ul>
+
+                <hr>
+
+                <h4>Early Wins: Predictive Power in Action</h4>
+                <p>Using the predictions, we’ve already seen significant improvements:</p>
+                <ul>
+                    <li><strong>Retention Boost:</strong> High-risk patients flagged by the model are now prioritized for follow-ups, leading to a 15% improvement in retention rates for our high-risk churn patients.</li>
+                    <li><strong>Efficiency Gains:</strong> Staff can focus resources where they’re needed most.</li>
+                </ul>
+
+                <hr>
+
+                <h4>What’s Next?</h4>
+                <p>In the next post, I’ll show how we’re turning these insights into actionable strategies to improve retention and patient outcomes. From telehealth options to flexible scheduling, we’ll dive into the real-world changes inspired by data science.</p>
+
+                <hr>
+
+                <h4>Final Thoughts</h4>
+                <p>Churn prediction isn’t just about numbers—it’s about understanding and supporting the people behind the data. By identifying who’s at risk and why, we’re making strides toward a more patient-centered approach to care.</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post8.html" class="btn btn-primary">Continue to Post 3: Bridging the Gap: Turning Insights Into Patient Retention Strategies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
