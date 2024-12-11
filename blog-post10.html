@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the Maze: Charting a Course to Reduce Patient No-Shows</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta property="og:title" content="Navigating the Maze: Charting a Course to Reduce Patient No-Shows">
+    <meta property="og:description" content="Dive into the details of designing an A/B test to reduce no-shows. Learn how hypothesis crafting, data preparation, and unbiased experimentation can address real-world healthcare challenges.">
+    <meta property="og:image" content="https://www.adamrivardwalter.com/blog images/healthcare-blog5.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.adamrivardwalter.com/blog-post-noshow2.html">
+    <meta property="og:type" content="article">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blog Section -->
+    <section id="blog-post" class="section">
+        <div class="container">
+            <!-- Title and Image -->
+            <h1 class="text-left">Navigating the Maze: Charting a Course to Reduce Patient No-Shows</h1>
+            <img src="blog images/healthcare-blog5.jpg" class="img-fluid my-4" alt="A/B Testing in Healthcare">
+
+            <!-- Content Left-Aligned -->
+            <div class="text-left">
+                <p>In the previous post, we explored why patient no-shows are a significant challenge for healthcare providers and introduced the concept of A/B testing as a potential solution. Now it’s time to dive into the details: How exactly do you design an A/B test to tackle a real-world problem like reducing no-shows?</p>
+                <p>In this post, we’ll walk through the process of designing our A/B test, from crafting a hypothesis to ensuring clean data and unbiased results. By the end, you’ll have a clear understanding of the steps involved in running a successful A/B test in healthcare—or any other field.</p>
+
+                <hr>
+
+                <h4>Step 1: Crafting a Hypothesis</h4>
+                <p>Every A/B test starts with a question. For our test, the question was simple yet powerful:</p>
+                <p><em>Does the type of appointment reminder affect patient attendance?</em></p>
+                <p>From this question, I crafted the following hypothesis:</p>
+                <blockquote><strong>Hypothesis:</strong> Sending reminder phone calls or SMS messages will reduce no-show rates compared to email reminders.</blockquote>
+                <p>This hypothesis provided a clear direction for the experiment and allowed us to define measurable outcomes.</p>
+
+                <hr>
+
+                <h4>Step 2: Preparing the Data</h4>
+                <p>To ensure reliable results, data preparation was a critical step. Here’s what I did:</p>
+                <ul>
+                    <li><strong>Gathering Data:</strong> I collected appointment records, including patient demographics, appointment times, and reminder types.</li>
+                    <li><strong>Filtering for Relevance:</strong> Only appointments with valid contact methods (email, phone number, SMS) were included in the study.</li>
+                    <li><strong>Randomizing Groups:</strong> Patients were randomly assigned to one of three groups:
+                        <ul>
+                            <li><strong>Group A:</strong> Received email reminders.</li>
+                            <li><strong>Group B:</strong> Received phone call reminders.</li>
+                            <li><strong>Group C:</strong> Received SMS reminders.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>By randomizing the groups, I minimized the risk of bias and ensured that each group was representative of the overall patient population.</p>
+
+                <hr>
+
+                <h4>Step 3: Running the Experiment</h4>
+                <p>With the groups defined, I implemented the experiment:</p>
+                <ul>
+                    <li><strong>Reminder Methods:</strong> Each group received reminders through their assigned method.</li>
+                    <li><strong>Observation Period:</strong> I monitored appointment attendance over several weeks to capture enough data for meaningful analysis.</li>
+                    <li><strong>Recording Outcomes:</strong> For each appointment, I recorded whether the patient showed up (1) or missed the appointment (0).</li>
+                </ul>
+                <p>This systematic approach ensured that I collected clean and actionable data.</p>
+
+                <hr>
+
+                <h4>Step 4: Ensuring a Fair Test</h4>
+                <p>A/B tests can easily go wrong if not carefully designed. Here are a few ways I ensured fairness and accuracy:</p>
+                <ul>
+                    <li><strong>Consistent Conditions:</strong> All groups were treated equally, except for the type of reminder they received.</li>
+                    <li><strong>Avoiding External Factors:</strong> The test period was chosen to avoid holidays or unusual clinic schedules that could skew results.</li>
+                    <li><strong>Sample Size:</strong> I ensured that each group had a sufficient number of appointments to achieve statistically significant results.</li>
+                </ul>
+
+                <hr>
+                <img src="blog images/AB workflow.1.jpg" class="img-fluid my-4" alt="A/B workflow">
+                <h4>Challenges We Faced</h4>
+                <p>No experiment is without its hurdles. During the test, we encountered:</p>
+                <ul>
+                    <li><strong>Incomplete Data:</strong> Some patient records lacked valid contact information, requiring additional filtering.</li>
+                    <li><strong>Behavioral Factors:</strong> External factors, such as weather or transportation issues, may have influenced no-shows independently of the reminder type.</li>
+                </ul>
+                <p>While these challenges didn’t derail the test, they provided valuable lessons for future experiments.</p>
+
+                <hr>
+
+                
+
+                <h4>Next in the Series</h4>
+                <p>In the next post, we’ll reveal the results of this A/B test and what they tell us about reducing patient no-shows. Stay tuned to see which reminder type came out on top—and how these findings can inform better strategies for healthcare providers.</p>
+
+                <hr>
+
+                <!-- Next in the Series Section -->
+                <h4>Next in the Series</h4>
+                <a href="blog-post11.html" class="btn btn-primary">Continue to Post 3: Unlocking the Door: Insights from Our No-Show Experiment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
