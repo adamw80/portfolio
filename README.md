@@ -47,7 +47,7 @@ You can customize the following:
 - **Contact:** Edit the contact information and social media links.
 
 ## License
-This project is licensed under the MIT License. You are free to use and modify it as per the license terms.
+This project is licensed under the MIT License. 
 
 ## Contact
 If you have any questions or feedback, feel free to reach out:
