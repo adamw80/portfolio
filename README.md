@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the source code for my personal portfolio website. The website is designed to highlight my projects, professional experience, and blog posts. It serves as a dynamic and interactive showcase of my technical skills and accomplishments.
 
-The portfolio website is accessible [here](https://www.adamrivardwalter.com).
+The portfolio website is accessible at: [https://www.adamrivardwalter.com](https://www.adamrivardwalter.com)
 
 ## Features
 - **Responsive Design:** Built with Bootstrap to ensure optimal viewing across devices.
@@ -13,31 +13,45 @@ The portfolio website is accessible [here](https://www.adamrivardwalter.com).
 - **Contact Section:** Provides links to my social profiles and direct contact information.
 
 ## Project Structure
-|-- README.md
-|-- /data - Datasets and data-related files
-|-- /src - Source code for data processing and analysis
-|-- /notebooks - Jupyter notebooks for analysis
-|-- /plots - Saved visualizations
+```
+.
+├── README.md                 # Documentation file
+├── index.html                # Main webpage (homepage)
+├── styles.css                # Custom CSS styles
+├── images/                   # Image assets for projects and sections
+├── blog/                     # Blog pages for each topic
+├── projects/                 # Project-related pages
+├── scripts.js                # Custom JavaScript for interactions
+└── icons/                    # Icons for social links and navigation
+```
 
+## Technologies Used
+- HTML5, CSS3, JavaScript
+- Bootstrap 4.5
+- jQuery
+- Smooth scrolling script for improved user experience
 
-## Installation Instructions
+## How to Use
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/projectname.git
+    git clone https://github.com/yourusername/portfolio.git
     ```
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Open `index.html` in your web browser to view the homepage.
+3. Modify the HTML, CSS, and JavaScript files to customize the content.
 
-## How to Run
-Explain how to run the code, any scripts or notebooks, and expected output.
-
-## Results
-Provide a summary of key results or findings (you can link to reports or visualizations if necessary).
-
-## Contributing
-Guidelines on how others can contribute to the project.
+## Customization
+You can customize the following:
+- **Navbar:** Update the navigation links in the `index.html` file.
+- **Projects:** Add or modify projects in the `projects` section and corresponding HTML cards.
+- **Blog:** Add new blog posts in the `/blog` directory and update links in the `recent-blog` section.
+- **Contact:** Edit the contact information and social media links.
 
 ## License
-Specify the license if applicable.
+This project is licensed under the MIT License. You are free to use and modify it as per the license terms.
+
+## Contact
+If you have any questions or feedback, feel free to reach out:
+- **Email:** Adam.RivardWalter@gmail.com  
+- **LinkedIn:** [Adam Rivard Walter](https://linkedin.com/in/adam-rivard-walter)  
+- **GitHub:** [adamw80](https://github.com/adamw80)
+
